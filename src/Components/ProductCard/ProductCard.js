@@ -24,12 +24,13 @@ const ProductCard = ({ product }) => {
   return (
     <div>
       <Card
-       onClick={() => navigate(`/products/${product?.id}`)}
+      
 
         style={{ width: "18rem", textAlign: "center" }}
         className={styles.productCard}
       >
         <Card.Img
+         onClick={() => navigate(`/products/${product?.id}`)}
           variant="top"
           src={product?.image}
           className={styles.cardImg}
